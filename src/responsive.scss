@@ -1,0 +1,118 @@
+@media only screen and (min-width: 550px) and (max-width: 991px) { 
+    
+    
+}
+
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+   
+    
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+    
+    
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+}
+
+
+
+/* Tablet Layout: 991px. */
+@media only screen and (max-width: 991px){ 
+    .mainmenu-area{text-align: center;}
+    .mainmenu{
+        margin-top:20px;
+        &.right{float: initial;}
+        ul{li{a{padding: 20px 5px;margin-top: 10px;}}}
+    }
+    .service-area{
+        .single-service{
+            h3{margin-top:20px;margin-bottom:10px;}
+            p{margin-bottom: 20px;line-height: 23px;}
+            width: 50%;
+        }
+    }
+    
+}
+
+/* Tablet Layout: 960px. */
+@media only screen and (max-width: 960px){ 
+
+    
+}
+
+/* Mobile Layout: 767px. */
+@media only screen and (max-width: 767px) { 
+    .img-responsive{display: inline-block;}
+    .header-top-area{
+        text-align: center;
+        .text-right{text-align: center;
+        .top-link{a{margin: 0;}}
+        .header-search-form{right: 10px;}
+        }
+    }
+    .about-us-area{text-align: center;}
+    .resource-area{text-align: center;}
+    .bolg-area{text-align: center;}
+    .footer-bottom{text-align: center;}
+
+    .mainmenu-area{
+        .logo{float: left;}
+        a{color: #fff;}
+        .responsive-menu{display: block;}
+        .mainmenu{display: none;}
+    }
+    .service-area{
+        .single-service{
+            padding:0 20px;
+            h3{margin-top:10px;margin-bottom:10px;}
+            p{margin-bottom:10px;}
+        }
+
+    }
+    .resource-area h1,
+    h1{font-size:30px;}
+    h2{font-size:28px;}
+    h3{font-size:22px;}
+
+}
+
+
+@media only screen and (max-width: 640px) {}
+
+/* Tablet Layout: 600px. */
+@media only screen and (max-width: 600px){ 
+    .service-area{
+        .single-service{
+        width: 100%;
+            
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 580px) {}
+
+/* Tablet Layout: 450px. */
+@media only screen and (max-width: 450px){}
+
+/* Mobile Layout: 360px. */
+@media only screen and (max-width: 360px) {
+    .subscribe-form{
+        height:40px;
+        input[type="email"]{padding:0;padding-left:3px;}
+        .subscribe-btn{
+            padding: 8px 20px;
+            border-radius: 50px;
+            outline: none;
+            border: medium none;
+            margin-left: -22px;
+        }
+    }
+}

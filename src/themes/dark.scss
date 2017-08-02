@@ -1,0 +1,202 @@
+@import "../author";
+/*  Template Name : Flick                            */
+/*  Theme Name    : Dark                             */
+/**=================================================**/
+
+
+
+//.logo{img{&.light{display:none;}}}
+
+$fill-color : #0482f8;
+$body-bg : #0c0e14;
+body{
+    background-color: #0c0e14;
+    a{color:#7e7e7e;}
+    color:#989898;
+    border-color: #ffffff;
+    h1,h2,h3,h4,h5,h6{color: #dddddd;}
+    input[type="text"],input[type="email"]{background-color: #131620;}
+}
+.header-top-area{
+    //background-color: #0c0e14;
+    color:#888888;
+    a{color:#888888;&:hover{color:#fff;}}
+}
+.header-search-form{
+    &:hover{
+        &:after{color: #fff;}
+    }
+}
+.mainmenu-area{
+    border-bottom-color: transparent;
+    .mainmenu{
+      a{
+        color: #7e7e7e;
+        &:hover{color:#fff;}
+      }
+      .active{
+        a{color:#fff;}
+      }
+    }  
+    
+    .responsive-menu {
+        .slicknav_menu {
+            background-color: rgba(12,14,20,0.9);
+            .slicknav_nav{
+                a{
+                    &:hover{background-color: #7a7a7a;}
+                }
+            }
+        }
+        .slicknav_btn {
+            background: rgb(68,66,242);
+            background: -webkit-linear-gradient(to left, rgba(89, 101, 100, 0.49) 5%, rgba(80, 50, 88, 0.65) 15%, rgba(37, 37, 66, 0.17) 80%);
+            background: -o-linear-gradient(to left, rgba(89, 101, 100, 0.49) 5%, rgba(80, 50, 88, 0.65) 15%, rgba(37, 37, 66, 0.17) 80%);
+            background: -moz-linear-gradient(to left, rgba(89, 101, 100, 0.49) 5%, rgba(80, 50, 88, 0.65) 15%, rgba(37, 37, 66, 0.17) 80%);
+            background: linear-gradient(to left, rgba(89, 101, 100, 0.49) 5%, rgba(80, 50, 88, 0.65) 15%, rgba(37, 37, 66, 0.17) 80%);        
+        }   
+    }
+}
+.homepage-hero-area{
+    background: -webkit-linear-gradient(to bottom, transparent 0px, rgba(4, 130, 248, 0.05) 5px, transparent 20px, transparent 0);
+    background: -o-linear-gradient(to bottom, transparent 0px, rgba(4, 130, 248, 0.05) 5px, transparent 20px, transparent 0);
+    background: -moz-linear-gradient(to bottom, transparent 0px, rgba(4, 130, 248, 0.05) 5px, transparent 20px, transparent 0);
+    background: linear-gradient(to bottom, transparent 0px, rgba(4, 130, 248, 0.05) 5px, transparent 20px, transparent 0);
+	input{border-color: #282d36;}
+}
+.flick-btn{
+    background-color: $fill-color;
+    color:#fff;
+}
+.service-area{
+    border-color: #1b1e29;
+    .single-service{
+    	border-color: #1b1e29;.fa{color: #0482f8;}
+      .service-icon{color: #4442f2;}
+    }
+}
+.testimonial-area{color: #fff;}
+.resource-area{
+	i{color:#888888;}
+	a{}
+    background: -webkit-linear-gradient(to bottom, transparent 0px, rgba(4, 130, 248, 0.05) 5px, transparent 20px, transparent 0);
+    background: -o-linear-gradient(to bottom, transparent 0px, rgba(4, 130, 248, 0.05) 5px, transparent 20px, transparent 0);
+    background: -moz-linear-gradient(to bottom, transparent 0px, rgba(4, 130, 248, 0.05) 5px, transparent 20px, transparent 0);
+    background: linear-gradient(to bottom, transparent 0px, rgba(4, 130, 248, 0.05) 5px, transparent 20px, transparent 0);
+}
+.bolg-area{.time{color:#888888;}a{}}
+
+
+.pricing-area{
+    .pricing-container{
+        border-color:#dddddd;
+        .pricing-top{
+        	h1,h2{color: #0482f8;}
+            span: $fill-color;
+            border-color: #dddddd;
+            p{color: #dddddd;}
+            .fa{
+                background: #fff;
+                color: $fill-color;
+            }
+        }
+        .pricing-content{
+        	color: #aaaaaa;
+   			p{color: #aaaaaa;}
+   			li{color: #aaaaaa;}
+   			a{color: #aaaaaa;&.pricing-btn{color:#fff;}}
+            ul{
+                li{
+                        
+                }
+            }
+        }
+        &:hover{
+            border-color:$fill-color;
+            .pricing-top{
+                .fa{background-color: $body-bg;}
+                border-color: $fill-color;
+                color: #fff;
+                p{color: #fff;}
+            }
+        }
+    }
+}
+
+.partner-area{background-color: #131620;}
+
+.flick-btn{
+   &:hover{
+     background: #131620;
+     border-color: #282d36;
+   }
+}
+.header-search-form{
+    form{
+        input[type="search"]{
+            &:focus{
+                border-color: #282d36;
+                background: #0c0e14;
+                cursor: text;
+            }
+        }
+    }
+}
+
+footer{background-color: #17171b;color: #b9b9b9;.title{color: #eeeeee;}a,.fa{color: #ffffff;&:hover{color:#b9b9b9;}}
+    .footer-top{
+        .footer-bottom-border{border-bottom-color: #282d36;}
+
+    }
+}
+
+//Color-Changer
+$wc-coler : #131620;
+$wc-coler-border : #3e2f2f;
+$wc-coler-fa : #7e7e7e;
+$wc-coler-panelHnd : #505050;
+
+#panelHandle, #panelHandle-right {
+  background: $wc-coler;
+  color: $wc-coler-panelHnd;
+  border: 1px solid $wc-coler-border;
+}
+#panelContent {
+  background: $wc-coler;
+  border: 1px solid $wc-coler-border;
+}
+
+#panelHandle p, #panelHandle-right p {
+  color: #000;
+  color: #007cc3;
+}
+.pointer {
+  border: solid transparent;
+  border-color: rgba(0, 128, 211, 0);
+  border-right-color: $wc-coler;
+}
+#panelContent h3 {
+  background: $wc-coler;
+  color: $wc-coler-panelHnd;
+}
+.sliding-panel .colors-container .color-changer a {
+  /* border: 1px solid #CECECE; */
+}
+
+/*-------------Preloader----------*/
+.home-preloder {
+  background: $body-bg none repeat scroll 0 0;
+}
+
+.home-preloder .spinner div {
+  background: white none repeat scroll 0 0;
+}
+.home-preloder .spinner > div {
+  background-color: #fff;
+}
+/*-------------To Top----------*/
+#toTop {
+  background: #787878 none repeat scroll 0 0;
+  color: #cccccc;
+
+}

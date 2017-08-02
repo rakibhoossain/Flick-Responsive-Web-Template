@@ -1,0 +1,189 @@
+@import "../author";
+/*  Template Name : Flick                            */
+/*  Theme Name    : Light                            */
+/**=================================================**/
+
+
+
+//.logo{img{&.dark{display:none;}}}
+
+$color1 : #ffffff;
+$border-color : #dddddd;
+
+body{
+    background-color: #ffffff;
+    a{color:#666666;}
+    color:#666666;
+    border-color: #dddddd;
+}
+.header-top-area{
+    background-color: #f5f5f5;
+    color:#888888;
+    a{color:#888888;&:hover{color: #dddddd;}}
+}
+.header-search-form{
+    &:hover{
+        &:after{color: #dddddd;}
+    }
+}
+
+.mainmenu-area{
+    border-bottom-color: #eeeeee;
+    .mainmenu{
+      a{
+        color: #222222;
+        &:hover{color: #dddddd;}
+      }
+      .active{
+        a{color: #dddddd;}
+      }
+    }
+    .responsive-menu {
+        .slicknav_menu {
+            background-color: rgba(68,66,242,0.9);
+            color: #fff;
+        }
+        .slicknav_btn {
+            background: rgb(68,66,242);
+            background: -webkit-linear-gradient(to left, rgba(89, 101, 100, 0.49) 5%, rgba(80, 50, 88, 0.65) 15%, rgba(37, 37, 66, 0.17) 80%);
+            background: -o-linear-gradient(to left, rgba(89, 101, 100, 0.49) 5%, rgba(80, 50, 88, 0.65) 15%, rgba(37, 37, 66, 0.17) 80%);
+            background: -moz-linear-gradient(to left, rgba(89, 101, 100, 0.49) 5%, rgba(80, 50, 88, 0.65) 15%, rgba(37, 37, 66, 0.17) 80%);
+            background: linear-gradient(to left, rgba(89, 101, 100, 0.49) 5%, rgba(80, 50, 88, 0.65) 15%, rgba(37, 37, 66, 0.17) 80%);       
+        }   
+    }
+}
+
+.homepage-hero-area{input{border-color: #eeeeee;}}
+.flick-btn{
+    background-color: #4442f2;
+    color:#fff;
+}
+.service-area{
+    border-color: #dddddd;
+    .single-service{
+      border-color: #dddddd;
+      .service-icon{color: #4442f2;}
+    }
+}
+.testimonial-area{background-color: #4442f2;color: #fff;}
+.resource-area{i{color:#888888;}h1{color:#222222;}p{color: #666666;}a{}}
+.bolg-area{.time{color:#888888;}h3{color:#222222;}p{color: #666666;}a{}}
+
+
+.pricing-area{
+    .pricing-container{
+        border-color:#dddddd;
+        .pricing-top{
+            color: #4442f2;
+            border-color: #dddddd;
+            p{color: #222222;}
+            .fa{
+                background: #fff;
+                color: #4442f2;
+            }
+        }
+        .pricing-content{
+            ul{
+                li{
+                        
+                }
+            }
+        }
+        &:hover{
+            border-color:#4442f2;
+            .pricing-top{
+                background-color: #4442f2;
+                color: #fff;
+                p{color: #fff;}
+            }
+        }
+    }
+}
+
+.partner-area{background-color: #f5f5f5;}
+
+.flick-btn{
+   &:hover{
+     background: #fff;
+     color:#222222;
+     border-color: #0482f8;
+   }
+}
+.hero-btn{
+    &:hover{
+        border-color:#ddd;
+    }
+}
+.subscribe-btn{
+    &:hover{
+        background-color: #fff;
+    }
+}
+.header-search-form{
+    form{
+        input[type="search"]{
+            &:focus{
+                border-color: #ddd;
+                background: #fff;
+                cursor: text;
+            }
+        }
+    }
+}
+footer{background-color: #17171b;color: #b9b9b9;.title{color: #eeeeee;}a,.fa{color: #ffffff;&:hover{color:#b9b9b9;}}
+    .footer-top{
+        .footer-bottom-border{border-bottom-color: #292934;}        
+    }
+}
+
+//Color-Changer
+//Color-Changer
+$wc-coler : #f5f5f5;
+$wc-coler-border : #dddddd;
+$wc-coler-fa : #7e7e7e;
+$wc-coler-panelHnd : #505050;
+
+#panelHandle, #panelHandle-right {
+  background: $wc-coler;
+  color: $wc-coler-panelHnd;
+  border: 1px solid $wc-coler-border;
+}
+#panelContent {
+  background: $wc-coler;
+  border: 1px solid $wc-coler-border;
+}
+
+#panelHandle p, #panelHandle-right p {
+  color: #000;
+  color: #007cc3;
+}
+.pointer {
+  border: solid transparent;
+  border-color: rgba(0, 128, 211, 0);
+  border-right-color: $wc-coler;
+}
+#panelContent h3 {
+  background: $wc-coler;
+  color: $wc-coler-panelHnd;
+}
+.sliding-panel .colors-container .color-changer a {
+  /* border: 1px solid #CECECE; */
+}
+
+/*-------------Preloader----------*/
+.home-preloder {
+  background: #fff none repeat scroll 0 0;
+}
+
+.home-preloder .spinner div {
+  background: #4442f2 none repeat scroll 0 0;
+}
+.home-preloder .spinner > div {
+  background-color: #4442f2;
+}
+/*-------------To Top----------*/
+#toTop {
+  background: #787878 none repeat scroll 0 0;
+  color: #cccccc;
+
+}

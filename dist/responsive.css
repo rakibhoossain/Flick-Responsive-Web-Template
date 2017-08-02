@@ -1,0 +1,131 @@
+/* Medium Layout: 1280px. */
+/* Tablet Layout: 768px. */
+/* Wide Mobile Layout: 480px. */
+/* Tablet Layout: 991px. */
+@media only screen and (max-width: 991px) {
+  .mainmenu-area {
+    text-align: center;
+  }
+
+  .mainmenu {
+    margin-top: 20px;
+  }
+  .mainmenu.right {
+    float: initial;
+  }
+  .mainmenu ul li a {
+    padding: 20px 5px;
+    margin-top: 10px;
+  }
+
+  .service-area .single-service {
+    width: 50%;
+  }
+  .service-area .single-service h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .service-area .single-service p {
+    margin-bottom: 20px;
+    line-height: 23px;
+  }
+}
+/* Tablet Layout: 960px. */
+/* Mobile Layout: 767px. */
+@media only screen and (max-width: 767px) {
+  .img-responsive {
+    display: inline-block;
+  }
+
+  .header-top-area {
+    text-align: center;
+  }
+  .header-top-area .text-right {
+    text-align: center;
+  }
+  .header-top-area .text-right .top-link a {
+    margin: 0;
+  }
+  .header-top-area .text-right .header-search-form {
+    right: 10px;
+  }
+
+  .about-us-area {
+    text-align: center;
+  }
+
+  .resource-area {
+    text-align: center;
+  }
+
+  .bolg-area {
+    text-align: center;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .mainmenu-area .logo {
+    float: left;
+  }
+  .mainmenu-area a {
+    color: #fff;
+  }
+  .mainmenu-area .responsive-menu {
+    display: block;
+  }
+  .mainmenu-area .mainmenu {
+    display: none;
+  }
+
+  .service-area .single-service {
+    padding: 0 20px;
+  }
+  .service-area .single-service h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .service-area .single-service p {
+    margin-bottom: 10px;
+  }
+
+  .resource-area h1,
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+}
+/* Tablet Layout: 600px. */
+@media only screen and (max-width: 600px) {
+  .service-area .single-service {
+    width: 100%;
+  }
+}
+/* Tablet Layout: 450px. */
+/* Mobile Layout: 360px. */
+@media only screen and (max-width: 360px) {
+  .subscribe-form {
+    height: 40px;
+  }
+  .subscribe-form input[type="email"] {
+    padding: 0;
+    padding-left: 3px;
+  }
+  .subscribe-form .subscribe-btn {
+    padding: 8px 20px;
+    border-radius: 50px;
+    outline: none;
+    border: medium none;
+    margin-left: -22px;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

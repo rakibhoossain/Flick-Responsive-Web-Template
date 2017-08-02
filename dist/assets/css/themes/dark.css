@@ -1,0 +1,241 @@
+/**=================================================**/
+/*  Author   :   Rakib Hossain                       */
+/*  Email    :   serakib@gmail.com                   */
+/*  Facebook :   http://www.facebook.com/prof.rakib  */
+/*  Github   :   http://github.com/serakib           */
+/*  Linkedin :   https://www.linkedin.com/in/serakib */
+/*  website  :   http://www.rakibhossain.cf          */
+/**=================================================**/
+/*  Template Name : Flick                            */
+/*  Theme Name    : Dark                             */
+/**=================================================**/
+body {
+  background-color: #0c0e14;
+  color: #989898;
+  border-color: #ffffff;
+}
+body a {
+  color: #7e7e7e;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  color: #dddddd;
+}
+body input[type="text"], body input[type="email"] {
+  background-color: #131620;
+}
+
+.header-top-area {
+  color: #888888;
+}
+.header-top-area a {
+  color: #888888;
+}
+.header-top-area a:hover {
+  color: #fff;
+}
+
+.header-search-form:hover:after {
+  color: #fff;
+}
+
+.mainmenu-area {
+  border-bottom-color: transparent;
+}
+.mainmenu-area .mainmenu a {
+  color: #7e7e7e;
+}
+.mainmenu-area .mainmenu a:hover {
+  color: #fff;
+}
+.mainmenu-area .mainmenu .active a {
+  color: #fff;
+}
+.mainmenu-area .responsive-menu .slicknav_menu {
+  background-color: rgba(12, 14, 20, 0.9);
+}
+.mainmenu-area .responsive-menu .slicknav_menu .slicknav_nav a:hover {
+  background-color: #7a7a7a;
+}
+.mainmenu-area .responsive-menu .slicknav_btn {
+  background: #4442f2;
+  background: -webkit-linear-gradient(to left, rgba(89, 101, 100, 0.49) 5%, rgba(80, 50, 88, 0.65) 15%, rgba(37, 37, 66, 0.17) 80%);
+  background: -o-linear-gradient(to left, rgba(89, 101, 100, 0.49) 5%, rgba(80, 50, 88, 0.65) 15%, rgba(37, 37, 66, 0.17) 80%);
+  background: -moz-linear-gradient(to left, rgba(89, 101, 100, 0.49) 5%, rgba(80, 50, 88, 0.65) 15%, rgba(37, 37, 66, 0.17) 80%);
+  background: linear-gradient(to left, rgba(89, 101, 100, 0.49) 5%, rgba(80, 50, 88, 0.65) 15%, rgba(37, 37, 66, 0.17) 80%);
+}
+
+.homepage-hero-area {
+  background: -webkit-linear-gradient(to bottom, transparent 0px, rgba(4, 130, 248, 0.05) 5px, transparent 20px, transparent 0);
+  background: -o-linear-gradient(to bottom, transparent 0px, rgba(4, 130, 248, 0.05) 5px, transparent 20px, transparent 0);
+  background: -moz-linear-gradient(to bottom, transparent 0px, rgba(4, 130, 248, 0.05) 5px, transparent 20px, transparent 0);
+  background: linear-gradient(to bottom, transparent 0px, rgba(4, 130, 248, 0.05) 5px, transparent 20px, transparent 0);
+}
+.homepage-hero-area input {
+  border-color: #282d36;
+}
+
+.flick-btn {
+  background-color: #0482f8;
+  color: #fff;
+}
+
+.service-area {
+  border-color: #1b1e29;
+}
+.service-area .single-service {
+  border-color: #1b1e29;
+}
+.service-area .single-service .fa {
+  color: #0482f8;
+}
+.service-area .single-service .service-icon {
+  color: #4442f2;
+}
+
+.testimonial-area {
+  color: #fff;
+}
+
+.resource-area {
+  background: -webkit-linear-gradient(to bottom, transparent 0px, rgba(4, 130, 248, 0.05) 5px, transparent 20px, transparent 0);
+  background: -o-linear-gradient(to bottom, transparent 0px, rgba(4, 130, 248, 0.05) 5px, transparent 20px, transparent 0);
+  background: -moz-linear-gradient(to bottom, transparent 0px, rgba(4, 130, 248, 0.05) 5px, transparent 20px, transparent 0);
+  background: linear-gradient(to bottom, transparent 0px, rgba(4, 130, 248, 0.05) 5px, transparent 20px, transparent 0);
+}
+.resource-area i {
+  color: #888888;
+}
+
+.bolg-area .time {
+  color: #888888;
+}
+
+.pricing-area .pricing-container {
+  border-color: #dddddd;
+}
+.pricing-area .pricing-container .pricing-top {
+  span: #0482f8;
+  border-color: #dddddd;
+}
+.pricing-area .pricing-container .pricing-top h1, .pricing-area .pricing-container .pricing-top h2 {
+  color: #0482f8;
+}
+.pricing-area .pricing-container .pricing-top p {
+  color: #dddddd;
+}
+.pricing-area .pricing-container .pricing-top .fa {
+  background: #fff;
+  color: #0482f8;
+}
+.pricing-area .pricing-container .pricing-content {
+  color: #aaaaaa;
+}
+.pricing-area .pricing-container .pricing-content p {
+  color: #aaaaaa;
+}
+.pricing-area .pricing-container .pricing-content li {
+  color: #aaaaaa;
+}
+.pricing-area .pricing-container .pricing-content a {
+  color: #aaaaaa;
+}
+.pricing-area .pricing-container .pricing-content a.pricing-btn {
+  color: #fff;
+}
+.pricing-area .pricing-container:hover {
+  border-color: #0482f8;
+}
+.pricing-area .pricing-container:hover .pricing-top {
+  border-color: #0482f8;
+  color: #fff;
+}
+.pricing-area .pricing-container:hover .pricing-top .fa {
+  background-color: #0c0e14;
+}
+.pricing-area .pricing-container:hover .pricing-top p {
+  color: #fff;
+}
+
+.partner-area {
+  background-color: #131620;
+}
+
+.flick-btn:hover {
+  background: #131620;
+  border-color: #282d36;
+}
+
+.header-search-form form input[type="search"]:focus {
+  border-color: #282d36;
+  background: #0c0e14;
+  cursor: text;
+}
+
+footer {
+  background-color: #17171b;
+  color: #b9b9b9;
+}
+footer .title {
+  color: #eeeeee;
+}
+footer a, footer .fa {
+  color: #ffffff;
+}
+footer a:hover, footer .fa:hover {
+  color: #b9b9b9;
+}
+footer .footer-top .footer-bottom-border {
+  border-bottom-color: #282d36;
+}
+
+#panelHandle, #panelHandle-right {
+  background: #131620;
+  color: #505050;
+  border: 1px solid #3e2f2f;
+}
+
+#panelContent {
+  background: #131620;
+  border: 1px solid #3e2f2f;
+}
+
+#panelHandle p, #panelHandle-right p {
+  color: #000;
+  color: #007cc3;
+}
+
+.pointer {
+  border: solid transparent;
+  border-color: rgba(0, 128, 211, 0);
+  border-right-color: #131620;
+}
+
+#panelContent h3 {
+  background: #131620;
+  color: #505050;
+}
+
+.sliding-panel .colors-container .color-changer a {
+  /* border: 1px solid #CECECE; */
+}
+
+/*-------------Preloader----------*/
+.home-preloder {
+  background: #0c0e14 none repeat scroll 0 0;
+}
+
+.home-preloder .spinner div {
+  background: white none repeat scroll 0 0;
+}
+
+.home-preloder .spinner > div {
+  background-color: #fff;
+}
+
+/*-------------To Top----------*/
+#toTop {
+  background: #787878 none repeat scroll 0 0;
+  color: #cccccc;
+}
+
+/*# sourceMappingURL=dark.css.map */

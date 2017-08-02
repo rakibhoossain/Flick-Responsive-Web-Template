@@ -1,0 +1,86 @@
+/**============================================**/
+/** Fonts & Font Size                          **/
+/**============================================**/
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+@import url('https://fonts.googleapis.com/css?family=Catamaran:300,500');
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900);
+
+
+$fo-36 : 36px;
+body{
+	font-family: 'Fira Sans', sans-serif;
+}
+.flick-btn{
+    font-family: 'Catamaran', sans-serif;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Maven Pro', sans-serif;
+}
+
+body{font-size: 15px;line-height: 28px;}
+
+.header-top-area{line-height: 26px;}
+.mainmenu-area{a{font-size: 16px;}}
+
+.homepage-hero-area{
+	h2{font-size: $fo-36;}
+	p{font-size: 16px;}
+}
+
+.service-area{
+    .single-service{
+    	h3{font-size: 24px;}
+    }
+}
+.about-us-area{
+    .about-us-content{
+        h1{font-size: $fo-36;line-height: 30px;}
+        p{font-family:Roboto,sans-serif;line-height: 30px;}
+    }
+}
+.testimonial-area{
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 16px;line-height: 30px;
+	h2{font-size: 24px;line-height: 32px;font-style: italic;}
+}
+.resource-area{
+	i{font-size: 22px;line-height: 30px;font-style: italic;}
+	h1{font-size: $fo-36;line-height: 45px;}
+	p{line-height: 30px;}
+}
+.bolg-area{
+	.time{font-size: 14px;line-height: 45px;}
+	h3{font-size: 26px;line-height: $fo-36;}//
+	p{line-height: 30px;}
+	.time,p{font-family:Roboto,sans-serif;}
+}
+
+.pricing-area{
+	h1{font-size: $fo-36;line-height: 45px;}
+    .pricing-container{
+        .pricing-top{
+        	font-size: 16px;line-height: 45px;
+        	h1{font-size: 60px;}
+        }
+        .pricing-content{
+            li{line-height: $fo-36;}//
+        }
+    }
+}
+.partner-area{h3{font-size: 26px;line-height: 30px;}}
+
+footer{
+    .footer-top{
+    	p{font-size: 14px;line-height: 26px;}
+    	h3{font-size: 24px;line-height: 26px;}
+    }
+    .footer-bottom{
+    	.widget{
+    		.title{font-size: 18px;line-height: 28px;}
+    		p,a{font-size: 14px;line-height: 26px;}
+            .fa{font-size:24px;}
+    	}
+    	.copyright-text{font-size: 13px;line-height: $fo-36;}//
+    }
+}
