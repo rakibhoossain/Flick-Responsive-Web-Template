@@ -20,6 +20,7 @@ You can:
   - Slick Nav
   - Move Top
   - Carosoul
+  - Scrollspy
 
 License
 ----
