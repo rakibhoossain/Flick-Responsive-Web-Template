@@ -11,14 +11,13 @@
 /* Website  :   http://www.rakibhossain.cf 
  *========================================
  */
+(function($) {
+    "use strict";
 
-(function ($) {
-	"use strict";
-
-    jQuery(document).ready(function($){
+    jQuery(document).ready(function($) {
 
 
-    //==================Viewport Measurement==================        
+        //==================Viewport Measurement==================        
         var $window = $(window);
         var windowSize = $window.width();
         var windowHeight = getViewPortHeight();
@@ -27,32 +26,38 @@
             windowSize = $window.width();
             windowHeight = getViewPortHeight();
         });
-                         
-        function getViewPortHeight() {     
+
+        function getViewPortHeight() {
             //detech ios chrome
-            if(navigator.userAgent.match('CriOS')) {
+            if (navigator.userAgent.match('CriOS')) {
                 return window.innerHeight;
             }
-            return $window.height(); 
+            return $window.height();
         }
 
-        $('.fullScreenBg').css({'width': windowSize + 'px'});
-        $('.fullScreenBg').css({'height': windowHeight + 'px'});
+        $('.fullScreenBg').css({
+            'width': windowSize + 'px'
+        });
+        $('.fullScreenBg').css({
+            'height': windowHeight + 'px'
+        });
 
         var serviceHeightMax = getMaxServiceHight();
-        $('.single-service').css({'height': serviceHeightMax + 'px'});
+        $('.single-service').css({
+            'height': serviceHeightMax + 'px'
+        });
 
         function getMaxServiceHight() {
             var serviceHeight = $('.single-service').height();
-            var tmp=serviceHeight;
+            var tmp = serviceHeight;
 
-            $('.single-service').each(function(){
+            $('.single-service').each(function() {
 
-                if ($(this).height()<serviceHeight) {
+                if ($(this).height() < serviceHeight) {
                     tmp = serviceHeight;
-                }else{
-                    tmp =  $(this).height();
-                    
+                } else {
+                    tmp = $(this).height();
+
                 }
             });
             return tmp;
@@ -61,24 +66,48 @@
 
 
         $('.hero-content').css({
-            'height': windowHeight -140 + 'px',
+            'height': windowHeight - 140 + 'px',
             'min-height': 520 + 'px',
         });
-     
-        $('.pricing-single-item').each(function(){
+
+        $('.pricing-single-item').each(function() {
             var pricingHeight = $(this).height();
-            $(this).css({'height': pricingHeight + 'px'});
+            $(this).css({
+                'height': pricingHeight + 'px'
+            });
         });
-            
+
         $('.mainmenu').slicknav({
             prependTo: '.responsive-menu'
         });
 
         var target = $('.single-service:nth-child(4)').nextAll();
-        target.each(function(){
-            $(this).css({'border-top': 'none'});
+        target.each(function() {
+            $(this).css({
+                'border-top': 'none'
+            });
         });
+        //======Add smooth scrolling to all links===========
+        $("a").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
 
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
         //======Fixed Mainmenu on Top after Scrolling=======
         // var navbar = $('.mainmenu-area'),
         // //distance = navbar.offset().top,
@@ -89,24 +118,25 @@
         //     if ($window.scrollTop() >= distance) {
         //         navbar.removeClass('header-area').addClass('header-area');
         //         $('.header-top-area').removeClass('none').addClass('none');
-                
+
         //     } else {
         //         navbar.removeClass('header-area');
         //         $('.header-top-area').removeClass('none');
         //     }
         // });
-    
+
         //==================Color Changer================== 
         $('#panelHandle').click(function() {
-           var rightMargin = parseInt($(".sidePanel").css('left'));
-            if(rightMargin < -1)
-            {
-               $(".sidePanel").animate({'left': '0px'});
-               $(".pointer").remove();
-            }
-            else
-            {
-              $(".sidePanel").animate({'left': '-160px'});
+            var rightMargin = parseInt($(".sidePanel").css('left'));
+            if (rightMargin < -1) {
+                $(".sidePanel").animate({
+                    'left': '0px'
+                });
+                $(".pointer").remove();
+            } else {
+                $(".sidePanel").animate({
+                    'left': '-160px'
+                });
             }
         });
 
@@ -117,8 +147,8 @@
             $(logo).attr('src', 'assets/img/logo-' + color + '.png');
 
         });
-        
-            
+
+
         //==================Testimonial Slider================== 
         $(".testimonial-slider").owlCarousel({
             items: 1,
@@ -129,7 +159,7 @@
             mouseDrag: true,
             touchDrag: false,
         });
-            
+
         //==================Partners Slider================== 
         $(".partners").owlCarousel({
             items: 5,
@@ -139,31 +169,65 @@
             loop: true,
             mouseDrag: true,
             touchDrag: false,
-            responsive: { 0: {items: 1}, 340: {items: 2}, 600: {items: 3}, 960: {items: 4}, 1000: {items: 5} } 
+            responsive: {
+                0: {
+                    items: 1
+                },
+                340: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                960: {
+                    items: 4
+                },
+                1000: {
+                    items: 5
+                }
+            }
         });
-            
-            
+
+
         //==================Slicknav==================
         $("ul#navigation").slicknav({
             prependTo: ".responsive-menu-wrap"
         });
-            
+
 
         //==================WOW Js====================   
-        new WOW().init();
+        // Helper function for add element box list in WOW
+        WOW.prototype.addBox = function(element) {
+            this.boxes.push(element);
+        };
 
+        // Init WOW.js and get instance
+        var wow = new WOW();
+        wow.init();
+
+        // Attach scrollSpy to .wow elements for detect view exit events,
+        // then reset elements and add again for animation
+        $('.wow').on('scrollSpy:exit', function() {
+            $(this).css({
+                'visibility': 'hidden',
+                'animation-name': 'none'
+            }).removeClass('animated');
+            wow.addBox(this);
+        }).scrollSpy()
         //==================UI Top====================   
-        $().UItoTop({ easingType: 'easeOutQuart' });
+        $().UItoTop({
+            easingType: 'easeOutQuart'
+        });
 
 
-     //jQuery Ready Function end   
+        //jQuery Ready Function end   
     });
 
 
-    jQuery(window).load(function(){
+    jQuery(window).load(function() {
         $(".home-preloder").fadeOut(3000);
-    //jquery Load Function end
+        //jquery Load Function end
     });
 
-//Jquery end
-}(jQuery));	
+    //Jquery end
+}(jQuery));
