@@ -1,5 +1,5 @@
 # Flick - Responsive Web Template
-[![N|Solid](http://rakibhossain.cf/portfolio/flick/assets/img/logo-light.png)](Logo)
+![Logo](dist/assets/img/logo-light.png)
 
 # Main Features!
 
